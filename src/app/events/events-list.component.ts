@@ -5,21 +5,88 @@ import { Component } from "@angular/core";
     <div>
     <h1>Upcoming Angular Events</h1>
     <hr>
-    <event-thumbnail [event]="event1"></event-thumbnail>
-    </div>`
+    <div class="row">
+    <div class="col-md-5" *ngFor="let event of events">
+    <event-thumbnail [event]="event"></event-thumbnail>
+    </div>
+    </div>
+    </div>`,
 })
 export class EventsListComponent {
-    event1 = {
-        id: 1,
-        name: 'Angular Connect',
-        date: '09/26/2036',
-        time: "10:00 am",
-        price: 599.99,
-        imageUrl: '/assets/images/angularconnect-shield.png',
-        location: {
-            address: '1057 DT',
-            city: 'London',
-            country: 'England',
-        }
-    }
+    events = [
+        {
+            id: 1,
+            name: 'Angular Connect',
+            date: '09/26/2036',
+            time: '10:00 am',
+            price: 599.99,
+            imageUrl: '/assets/images/angularconnect-shield.png',
+            location: {
+                address: '1057 DT',
+                city: 'London',
+                country: 'England',
+            },
+        },
+        {
+            id: 1,
+            name: 'Angular Connect',
+            date: '09/26/2036',
+            time: '10:00 am',
+            price: 599.99,
+            imageUrl: '/assets/images/angularconnect-shield.png',
+            onlineUrl:'http://ng-nl.org/'
+        },
+        {
+            id: 1,
+            name: 'Angular Connect',
+            date: '09/26/2036',
+            time: '10:00 am',
+            price: 599.99,
+            imageUrl: '/assets/images/angularconnect-shield.png',
+            location: {
+                address: '1057 DT',
+                city: 'London',
+                country: 'England',
+            },
+        },
+        {
+            id: 1,
+            name: 'Angular Connect',
+            date: '09/26/2036',
+            time: '10:00 am',
+            price: 599.99,
+            imageUrl: '/assets/images/angularconnect-shield.png',
+            location: {
+                address: '1057 DT',
+                city: 'London',
+                country: 'England',
+            },
+        },
+        {
+            id: 1,
+            name: 'Angular Connect',
+            date: '09/26/2036',
+            time: '10:00 am',
+            price: 599.99,
+            imageUrl: '/assets/images/angularconnect-shield.png',
+            location: {
+                address: '1057 DT',
+                city: 'London',
+                country: 'England',
+            },
+        },
+        {
+            id: 1,
+            name: 'Angular Connect',
+            date: '09/26/2036',
+            time: '10:00 am',
+            price: 599.99,
+            imageUrl: '/assets/images/angularconnect-shield.png',
+            location: {
+                address: '1057 DT',
+                city: 'London',
+                country: 'England',
+            },
+        },
+    ];
 }
